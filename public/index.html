@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lost & Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="found.html">Return</a>
+    <a href="find.html">Find</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a id="adminLink" href="admin.html" style="display:none;">Admin</a>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search items..."> 
+    </div>
+
+    <div class="account">
+      <div class="account-btn" onclick="toggleDropdown()">
+        <i id="navicon" class="fa-solid fa-circle-user"></i> ▾
+      </div>
+
+      <div class="dropdown" id="dropdownMenu">
+      <div class="profile">Profile</div>
+      <div class="logout" onclick="logout()">Logout</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <div class="about-content">
+      <h1>Lost & Found Portal</h1>
+      <p>
+        Lost something? Found something? This portal helps bridge the gap between loss 
+        and recovery. Users can quickly report lost items or return found belongings, 
+        making the process simple, reliable, and accessible for everyone on campus.
+      </p>
+    </div>
+  </div>
+
+  <h1 class="title">FOUND ITEMS</h1>
+  <div id="foundItemsContainer" class="imgs"></div>
+
+  <h1 class="title">LOST ITEMS</h1>
+  <div id="lostItemsContainer" class="imgs"></div>
+
+  <footer class="footer">
+    <p>Lost & Found</p>
+    <p>noreply.LostFound404@gmail.com</p>
+    <p>© 2026 All Rights Reserved</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

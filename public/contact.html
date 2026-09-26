@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact | Lost & Found</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="found.html">Return</a>
+<a href="find.html">Find</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+
+
+<section class="contact-wrapper">
+
+<div class="contact-card">
+
+<div class="contact-info">
+
+<h2>Get In Touch</h2>
+
+<p>
+Need help with a claim or recovery?
+Reach out to us.
+</p>
+
+<div class="contact-row">
+<i class="fa-solid fa-envelope"></i>
+support@lostfound.com
+</div>
+
+<div class="contact-row">
+<i class="fa-solid fa-phone"></i>
++91 7075184732
+</div>
+
+<div class="contact-row">
+<i class="fa-solid fa-location-dot"></i>
+Campus Lost & Found Office
+</div>
+
+<div class="contact-row">
+<i class="fa-solid fa-clock"></i>
+Mon - Fri | 9 AM - 5 PM
+</div>
+
+</div>
+
+
+
+<form
+id="contactForm"
+class="contact-form"
+onsubmit="sendContact(event)"
+>
+
+<h2>Send Message</h2>
+
+<input
+type="text"
+id="cname"
+placeholder="Your Name"
+required
+>
+
+<input
+type="email"
+id="cemail"
+placeholder="Email"
+required
+>
+
+<input
+type="text"
+id="subject"
+placeholder="Subject"
+required
+>
+
+<textarea
+id="message"
+placeholder="Your message"
+required
+></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<section class="faq-section">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-box">
+<h4>How do I claim an item?</h4>
+<p>
+Use Claim Item from found listings and submit verification details.
+</p>
+</div>
+
+<div class="faq-box">
+<h4>How long are items stored?</h4>
+<p>
+Items remain listed until claimed or resolved.
+</p>
+</div>
+
+<div class="faq-box">
+<h4>Who approves claims?</h4>
+<p>
+Claims are reviewed by administrators.
+</p>
+</div>
+
+</section>
+
+
+<footer class="footer">
+<p>Lost & Found</p>
+<p>noreply.LostFound404@gmail.com</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

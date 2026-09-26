@@ -1,0 +1,11 @@
+Lost & Found Portal - Runtime Requirements
+
+Node.js: 20.x or newer
+npm: 10.x or newer
+MySQL: 8.0 or newer
+Modern browser: Chrome, Edge, Firefox, or Safari
+Internet connection: required for email notifications and CDN-hosted frontend assets
+
+Node dependencies are managed through package.json and package-lock.json.
+Database setup is provided in database/schema.sql.
+Environment variables are documented in .env.example.

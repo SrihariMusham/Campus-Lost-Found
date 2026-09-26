@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Return Item</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+  </div>
+
+  <form id="returnClaimForm">
+    <h2>Return Lost Item</h2>
+
+    <input id="itemName" placeholder="Item Name" readonly>
+    <input id="itemId" placeholder="Item ID" readonly>
+    <input id="name" placeholder="Your Name" required>
+    <input id="email" placeholder="Email" required>
+    <input id="phone" placeholder="Phone Number" required>
+
+    <textarea
+      id="description"
+      placeholder="Describe where/how you found the item"
+      required></textarea>
+
+    <button type="submit">
+      Submit Return Request
+    </button>
+  </form>
+
+<script src="script.js"></script>
+</body>
+</html>
