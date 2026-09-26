@@ -139,7 +139,7 @@ Or execute the contents of `database/schema.sql` using MySQL Workbench.
 
 ### 5. Configure environment variables
 
-Create a `.env` file from `.env.example`.
+Create a `.env`.
 
 ```text
 PORT=3000
@@ -158,8 +158,6 @@ SMTP_USER=your-email@example.com
 SMTP_PASS=your-app-password
 MAIL_FROM=your-email@example.com
 ```
-
-Do **not** commit `.env` to GitHub.
 
 ### 6. Start the server
 
@@ -271,58 +269,9 @@ The application stores uploaded images in `uploads/`. Many cloud platforms use e
 | DELETE | `/lost/:id` | Admin | Delete lost item |
 | DELETE | `/found/:id` | Admin | Delete found item |
 
-## Security Improvements Added for Deployment
-
-The deployment-ready version includes:
-
-- Password hashing with bcrypt
-- JWT authentication with configurable secret and expiry
-- Server-side admin authorization
-- Admin-only delete and claim-management APIs
-- Environment-based database credentials
-- Environment-based SMTP credentials
-- No hard-coded database or email passwords
-- Upload size and MIME-type validation
-- Parameterized SQL queries
-- HTTP security headers
-- JSON request-size limits
-- MySQL connection pooling
-- Health-check endpoint
-- Production-friendly `PORT` handling
-
-## Recommended Next Improvements
-
-These are the next upgrades I recommend before calling the application production-grade:
-
-1. Move uploaded images to Cloudinary/S3/object storage.
-2. Add password reset and email verification.
-3. Add pagination and server-side search/filtering.
-4. Add rate limiting for login and signup endpoints.
-5. Add audit logs for admin actions.
-6. Add CSRF protection if the authentication model changes to cookies.
-7. Add automated API tests.
-8. Add Docker support for reproducible deployment.
-9. Add a proper user profile and claim-history page.
-10. Add a privacy policy and clear consent before exposing contact details.
-
 ## Project Background
 
 The academic project documentation describes the portal as a centralized digital solution intended to replace notice boards, registers, and informal communication. It identifies reporting, browsing, claim/return requests, admin verification, email notifications, and resolution tracking as core functionality.
-
-The project abstract also identifies secure authentication, responsive interfaces, search, image uploads, admin moderation, and automated email notifications as major features.
-
-## Team
-
-- M. Srihari
-- M. Sanjay
-- M. Vaishnavi
-- M. Neeraj
-
-Project Guide: Mrs. G. Archana, Assistant Professor, Department of Information Technology.
-
-## Deployment Checklist
-
-See [`docs/DEPLOYMENT_CHECKLIST.md`](docs/DEPLOYMENT_CHECKLIST.md) for the GitHub, database, backend, testing, and production checklist.
 
 ## License
 
