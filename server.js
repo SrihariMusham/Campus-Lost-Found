@@ -43,7 +43,13 @@ const pool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: Number(process.env.DB_CONNECTION_LIMIT || 10),
   queueLimit: 0,
-  charset: "utf8mb4"
+  charset: "utf8mb4",
+
+  ssl: process.env.TIDB_ENABLE_SSL === "true"
+    ? {
+        minVersion: "TLSv1.2"
+      }
+    : undefined
 });
 
 const JWT_SECRET = process.env.JWT_SECRET;
